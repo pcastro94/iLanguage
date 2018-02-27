@@ -6,8 +6,17 @@
 
 <ion-content class="backgroundHome">
   <div class="textInput">
-    asgasdgsd
+
+      <ion-textarea rows="5" [(ngModel)] = "text"></ion-textarea>
+    
   </div>
+
+  <div class="divButton">
+
+    <button clear ion-button (click)="sayText()">Speak</button>
+
+  </div>
+
   <div class="sound-icon">
     <div class="sound-wave">
       <div class="bar"></div>

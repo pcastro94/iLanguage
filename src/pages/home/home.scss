@@ -3,8 +3,9 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFB;
-    color: #FFFFFB;
+    background: rgb(105,155,200);
+    background: radial-gradient(ellipse at top left, rgba(105,155,200,1) 0%,rgba(181,197,216,1) 57%);
+    color: rgb(85, 85, 85);
 }
 
 
@@ -12,7 +13,7 @@
 .textInput{
     // display: block;
     margin: 30% auto 0 auto;
-    background-color: #4c4c4c;  
+    background-color: rgba(255, 255, 255, 0.445);
     text-align: center;
     border-radius: 5px;
     width: 30rem;
@@ -23,10 +24,20 @@
 }
 
 .text-input-ios{
-    margin: 2rem;
+    margin: 0;
     font-size: 25px;
     text-transform: capitalize;
 }
+
+
+.divButton{
+    text-align: center;
+}
+
+.button-inner{
+    font-size: 20px;
+}
+
 
 .sound-icon {
     width: 100%;

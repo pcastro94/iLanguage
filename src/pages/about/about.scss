@@ -1,10 +1,9 @@
 .backgroundAbout{
-    background-image: url("../assets/imgs/parque3.jpg");
     height: 100vh;
     width: 100vw;
     margin: 0%;
-    background-size:cover;
-    background-position-x: center;
+    background: rgb(105,155,200);
+    background: radial-gradient(ellipse at top left, rgba(105,155,200,1) 0%,rgba(181,197,216,1) 57%);
 }
 
 .textAbout{
@@ -12,9 +11,10 @@
     text-align: center;
     margin: 10%;
     margin-top: 32%;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.445);
     border-radius: 10px;
     width: 30rem;
+    color: rgb(85, 85, 85);
 
     
 }

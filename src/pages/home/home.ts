@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { TextToSpeech } from '@ionic-native/text-to-speech';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +8,25 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  text:string;
+
+  constructor(private tts: TextToSpeech, public navCtrl: NavController) {
 
   }
 
+  async sayText(): Promise<any>{
+    
+    try{
+      await this.tts.speak(this.text);
+      console.log("Sucessfully spoke" +  this.text);
+    }
+    catch(e){
+      console.log(e);
+    }
+  }
+
+  
+
+
 }
+
