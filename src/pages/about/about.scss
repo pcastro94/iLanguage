@@ -3,22 +3,46 @@
     width: 100vw;
     margin: 0%;
     background: rgb(105,155,200);
-    background: radial-gradient(ellipse at top left, rgba(105,155,200,1) 0%,rgba(181,197,216,1) 57%);
+    background: radial-gradient(ellipse at top left, rgb(79, 148, 207) 27%,rgb(65, 155, 147) 80%);
 }
 
 .textAbout{
     font-size: 18px;
     text-align: center;
     margin: 10%;
-    margin-top: 6%;
+    margin-top: 10%;
+    margin-bottom: 12%;
     background-color: rgba(255, 255, 255, 0.445);
     border-radius: 10px;
     width: 30rem;
     color: rgb(85, 85, 85);
     padding: 10%;
+}
+
+.divImg{
+  width: 100%;
+  height: 3rem;
+  margin: 5% 5%;
+  display: flex;
+
+}
+
+.firstImg{
+  width: 3rem;;
+  height: auto;;
+  margin: 0;
+}
+
+.secondImg{
+  width: 9rem;
+  height: 70%;
+  margin: 0;
+  margin-top: 1.9%;
+  margin-left: 3%;
+
+}
 
     
-}
 
 ion-navbar{
     color:white;
@@ -34,10 +58,7 @@ ion-navbar{
       color:black;
   }
 
-  button:hover{
-      background-color: #488aff;
-      color: white;
-  }
+
 
   .buttonAbout{
       color: rgb(85, 85, 85); 
@@ -55,84 +76,4 @@ ion-navbar{
       color: #55acee;
   }
 
-  .instagram{
-    $size: 50vmin;
-
-    *,
-    *:before,
-    *:after { box-sizing: border-box; }
-    
-    html,
-    body {
-      width: 100%;
-      height: 100%;
-    }
-    
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transform: translate3d(0, 0, 0);
-    }
-    
-    .instagram {
-      background:
-        /////// Use radial gradients to get the rounded
-        /////// gradient effect in each corner
-    
-        // left bottom
-        radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
-        radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
-        // left top
-        radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
-        radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
-        //  right top
-        radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
-        radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
-        // right bottom
-        radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
-    
-        /////// create a base coat to smooth
-        /////// corner gradients
-        linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-    
-      border-radius: .2em;
-      font-size: $size;
-      height: 1em;
-      position: relative;
-      width: 1em;
-    
-      &:before,
-      &:after {
-        color: #fff;
-        content: '';
-        display: block;
-        position: absolute;
-        border: .075em solid;
-      }
-    
-      &:before {
-        border-radius: inherit;
-        height: .75em;
-        transform: translate(.125em, .125em);
-        width: .75em;
-      }
-    
-      &:after {
-        border-radius: 1em;
-        box-shadow: .2em -.2em 0 -.16em;
-        height: .4em;
-        transform: translate(.3em, .3em);
-        width: .4em;    
-      }
-    }
-    
-    }
-    
-
-
-
-
-
-
-    
+  

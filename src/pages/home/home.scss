@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     background: rgb(105,155,200);
-    background: radial-gradient(ellipse at top left, rgba(105,155,200,1) 0%,rgba(181,197,216,1) 57%);
+    background: radial-gradient(ellipse at top left, rgb(79, 148, 207) 27%,rgb(65, 155, 147) 80%);
     color: rgb(85, 85, 85);
 }
 
@@ -12,11 +12,17 @@ ion-navbar{
     text-align: center;
 }
 
+img{
+    width: 15rem;
+    height: 18rem;
+    margin: 8% 29%;
+}
+
 
 
 .textInput{
     // display: block;
-    margin: 30% auto 0 auto;
+    margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.445);
     text-align: center;
     border-radius: 5px;
@@ -40,6 +46,8 @@ ion-navbar{
 
 .button-inner{
     font-size: 20px;
+    color: #4c4c4c;
+    margin-top: 17%;
 }
 
 
@@ -48,7 +56,8 @@ ion-navbar{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 5%;
+    
   }
   .sound-wave {
     width: 75%;

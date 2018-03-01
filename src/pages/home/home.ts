@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { TextToSpeech } from '@ionic-native/text-to-speech';
 import { Socket } from 'ng-socket-io';
-import { templateJitUrl } from '@angular/compiler';
+import { NgZone} from '@angular/core';
+// import { templateJitUrl } from '@angular/compiler';
 
 @Component({
   selector: 'page-home',
@@ -12,31 +13,36 @@ export class HomePage {
 
   text:string;
   texto;
+  private messages: any;
+  teste="asdasd";
+  word = "sdfghjkl";
+  
 
-  teste;
+  constructor(private tts: TextToSpeech, public navCtrl: NavController, private socket: Socket, /*private ngZone:NgZone*/) {
 
-  constructor(private tts: TextToSpeech, public navCtrl: NavController, private socket: Socket) {
-
-    // teste
-    this.teste = "teste"
-
-
+    this.messages ={};
     // logica
     this.socket.connect();
-    this.socket.on("palavra", function(data){
-      console.log(data)
-      this.data;
-      // let textoLuva = this.texto;
-      // textoLuva = data;
-      //   if(textoLuva==textoLuva){
-      //     this.textoLuva+=textoLuva
-    
-      //   }
-
-  
-    })
+    this.socket.on("on:send-message", function(data){
+      this.ngZone.run(() => {
+        this.messages.push(data);
+        // console.log("message :", messages);
+      });
+    });
   }
 
+    // this.teste ="";
+    // // logica
+    // this.socket.connect();
+    // this.socket.on("palavra", function(data){
+    //   console.log(data)
+    //   this.teste = this.teste + data;
+    //   console.log(this.teste);
+    //   return this.teste;
+    // })
+  // }
+
+  
   async sayText(): Promise<any>{
     
     try{
