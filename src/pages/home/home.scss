@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     background: rgb(105,155,200);
-    background: radial-gradient(ellipse at top left, rgb(79, 148, 207) 27%,rgb(65, 155, 147) 80%);
+    background: radial-gradient(ellipse at top left, rgb(160, 172, 182) 27%,rgb(255, 255, 255) 80%);
     color: rgb(85, 85, 85);
 }
 
@@ -12,17 +12,27 @@ ion-navbar{
     text-align: center;
 }
 
-img{
-    width: 15rem;
-    height: 18rem;
-    margin: 8% 29%;
+
+.imgGif{
+    width: auto;
+    height: 40%;
+    margin: auto;
+    display: flex;
 }
+
+.center{
+    font-size: 30px;
+    
+    width: 100%;
+}
+    
+    
 
 
 
 .textInput{
     // display: block;
-    margin: 0 auto;
+    margin: 5% auto;
     background-color: rgba(255, 255, 255, 0.445);
     text-align: center;
     border-radius: 5px;
@@ -34,9 +44,14 @@ img{
 }
 
 .text-input-ios{
-    margin: 0;
+    
+    
     font-size: 25px;
     text-transform: capitalize;
+}
+
+textarea.text-input{
+    font-size: 20px;
 }
 
 
@@ -47,7 +62,7 @@ img{
 .button-inner{
     font-size: 20px;
     color: #4c4c4c;
-    margin-top: 17%;
+    
 }
 
 
@@ -65,6 +80,8 @@ img{
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    
     
     .bar {
       display: block;
